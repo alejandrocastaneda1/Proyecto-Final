@@ -5,10 +5,17 @@ target/
 .kotlin
 
 ### IntelliJ IDEA ###
+<<<<<<< HEAD
 .idea/modules.xml
 .idea/jarRepositories.xml
 .idea/compiler.xml
 .idea/libraries/
+=======
+ProyectoMusica/.idea/modules.xml
+ProyectoMusica/.idea/jarRepositories.xml
+ProyectoMusica/.idea/compiler.xml
+ProyectoMusica/.idea/libraries/
+>>>>>>> a9ebb57 (Primer actualización)
 *.iws
 *.iml
 *.ipr

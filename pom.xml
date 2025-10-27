@@ -5,9 +5,15 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>org.example</groupId>
+<<<<<<< HEAD
     <artifactId>ProyectoFinal</artifactId>
     <version>1.0-SNAPSHOT</version>
     <name>ProyectoFinal</name>
+=======
+    <artifactId>ProyectoFinalp</artifactId>
+    <version>1.0-SNAPSHOT</version>
+    <name>ProyectoFinalp</name>
+>>>>>>> a9ebb57 (Primer actualización)
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -60,7 +66,12 @@
                         <!-- Default configuration for running with: mvn clean javafx:run -->
                         <id>default-cli</id>
                         <configuration>
+<<<<<<< HEAD
                             <mainClass>org.example.proyectofinal/org.example.proyectofinal.HelloApplication</mainClass>
+=======
+                            <mainClass>org.example.proyectofinalp/org.example.proyectofinalp.HelloApplication
+                            </mainClass>
+>>>>>>> a9ebb57 (Primer actualización)
                             <launcher>app</launcher>
                             <jlinkZipName>app</jlinkZipName>
                             <jlinkImageName>app</jlinkImageName>
