@@ -1,17 +1,12 @@
-<<<<<<< HEAD
-module org.example.proyectofinal {
-=======
 module org.example.proyectofinalp {
->>>>>>> a9ebb57 (Primer actualización)
     requires javafx.controls;
     requires javafx.fxml;
 
-
-<<<<<<< HEAD
-    opens org.example.proyectofinal to javafx.fxml;
-    exports org.example.proyectofinal;
-=======
     opens org.example.proyectofinalp to javafx.fxml;
+    opens org.example.proyectofinalp.model to javafx.fxml;
+    opens org.example.proyectofinalp.viewcontroller to javafx.fxml;
+
     exports org.example.proyectofinalp;
->>>>>>> a9ebb57 (Primer actualización)
+    exports org.example.Proyectofinalp.model;
+    exports org.example.Proyectofinalp.viewcontroller;
 }

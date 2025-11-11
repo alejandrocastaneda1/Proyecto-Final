@@ -25,4 +25,9 @@ public class BloqueHorario implements IGestionable{
     public void setDisponible(boolean disponible) { this.disponible = disponible; }
     public void setHoraInicio(String horaInicio) { this.horaInicio = horaInicio; }
     public void setHoraFin(String horaFin) { this.horaFin = horaFin; }
+
+    @Override
+    public String field() {
+        return "";
+    }
 }
