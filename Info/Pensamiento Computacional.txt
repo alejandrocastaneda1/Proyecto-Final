@@ -1,0 +1,77 @@
+Hecho por:
+
+- Alejandro Castañeda Muñoz
+- Eduar Alfonso Verano Rivera
+
+Pensamiento Computacional ☠️
+
+-Abstracción ☁️:
+
+¿Qué se solicita finalmente (cuál es el problema)?
+
+Se solicita desarrollar un sistema de gestión para una academia de música, que permita administrar de forma
+organizada toda la información relacionada con los estudiantes, profesores, cursos y horarios.
+El problema principal es automatizar las tareas administrativas que actualmente se realizan de forma manual,
+como el registro de estudiantes, la asignación de clases, la gestión de horarios, el control de cupos
+y el seguimiento académico.
+
+¿¿Información relevante?
+
+°Estudiantes: nombre, documento, edad, instrumento que estudia, nivel y clases inscritas.
+°Profesores: nombre, documento, instrumento que enseña, horario y lista de alumnos asignados.
+°Cursos: nombre, tipo (individual o grupal), nivel, cupo máximo, horario y profesor a cargo.
+°Administrador: encargado de crear cursos, asignar profesores y generar reportes.
+°Reglas de negocio: validación de cupos, horarios disponibles, prerrequisitos por nivel, asistencia y evaluaciones.
+
+¿Cómo se agrupa esta información?
+
+Estudiantes: contiene toda la información personal y académica del alumno.
+Profesores: gestiona la asignación de clases, los horarios y las listas de alumnos.
+Cursos: agrupa la información de cada curso, su horario, profesor y estudiantes inscritos.
+Administrativo: centraliza la creación, modificación y eliminación de datos del sistema, además de generar reportes generales.
+
+¿Qué funcionalidades se solicitan finalmente?
+
+Registro, modificación y eliminación de estudiantes y profesores.
+Creación y administración de cursos (asignación de horarios, niveles y cupos).
+Control de asistencia y progreso de los estudiantes.
+Generación de reportes por curso o por alumno.
+Validación automática de cupos y conflictos de horario.
+Interfaz gráfica
+
+-Descomposición 💭:
+
+¿Cómo se distribuyen las funcionalidades?
+
+Función de Estudiantes:
+Registro, consulta, edición y eliminación de estudiantes.
+Inscripción a cursos, visualización de horarios y seguimiento del progreso académico.
+
+Función de Profesores:
+Registro y gestión de profesores.
+Asignación de clases, control de horarios y seguimiento de alumnos inscritos.
+
+Función de Cursos:
+Creación de cursos nuevos (por instrumento, nivel o tipo de clase).
+Gestión de cupos, horarios y asignación de profesor.
+Control de inscripciones y cancelaciones.
+
+Función de Administración:
+Centraliza el control general del sistema.
+Permite generar reportes de estudiantes, profesores y cursos.
+Gestiona las reglas de negocio (conflictos de horario, validaciones de cupos y niveles).
+
+¿Qué debo hacer para probar estas funcionalidades? (Pruebas unitarias)
+
+Haremos algunas prubeas como las de:
+
+assertEquals(expected, actual)
+assertNotEquals(unexpected, actual)
+assertTrue(condition)
+assertFalse(condition)
+assertNotNull(obj)
+assertNull(actual)
+assertThrows(exception.class, executable)
+
+
+
