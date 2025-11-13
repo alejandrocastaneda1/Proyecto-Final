@@ -10,6 +10,7 @@ public class Curso {
     private int duracionSemanas;
     private List<Clase> clases;
     private List<Estudiante> estudiantes;
+    private List<Asignatura> Asigntatura;
 
     public Curso(String nombre, String instrumento, int duracionSemanas) {
         this.nombre = nombre;
@@ -17,6 +18,7 @@ public class Curso {
         this.duracionSemanas = duracionSemanas;
         this.clases = new ArrayList<>();
         this.estudiantes = new ArrayList<>();
+        this.Asigntatura = new ArrayList<>();
     }
 
     public String getNombre() { return nombre; }
@@ -38,15 +40,6 @@ public class Curso {
 
     public List<Clase> getClases() { return clases; }
     public List<Estudiante> getEstudiantes() { return estudiantes; }
+    public List<Asignatura> getAsigntatura() {return Asigntatura; }
 
-    @Override
-    public String toString() {
-        return "Curso{" +
-                "nombre='" + nombre + '\'' +
-                ", instrumento='" + instrumento + '\'' +
-                ", duracionSemanas=" + duracionSemanas +
-                ", clases=" + clases.size() +
-                ", estudiantes=" + estudiantes.size() +
-                '}';
-    }
 }
