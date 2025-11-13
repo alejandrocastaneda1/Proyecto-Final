@@ -7,7 +7,7 @@ Pensamiento Computacional ☠️
 
 -Abstracción ☁️:
 
-🔹¿Qué se solicita finalmente (cuál es el problema)?
+🔴¿Qué se solicita finalmente (cuál es el problema)?
 
 Se solicita desarrollar un sistema de gestión para una academia de música, que permita administrar de forma
 organizada toda la información relacionada con los estudiantes, profesores, cursos y horarios.
@@ -15,7 +15,7 @@ El problema principal es automatizar las tareas administrativas que actualmente 
 como el registro de estudiantes, la asignación de clases, la gestión de horarios, el control de cupos
 y el seguimiento académico.
 
-🔹¿Información relevante?
+🔴¿Información relevante?
 
 °Estudiantes: nombre, documento, edad, instrumento que estudia, nivel y clases inscritas.
 °Profesores: nombre, documento, instrumento que enseña, horario y lista de alumnos asignados.
@@ -23,14 +23,14 @@ y el seguimiento académico.
 °Administrador: encargado de crear cursos, asignar profesores y generar reportes.
 °Reglas de negocio: validación de cupos, horarios disponibles, prerrequisitos por nivel, asistencia y evaluaciones.
 
-🔹¿Cómo se agrupa esta información?
+🔴¿Cómo se agrupa esta información?
 
 Estudiantes: contiene toda la información personal y académica del alumno.
 Profesores: gestiona la asignación de clases, los horarios y las listas de alumnos.
 Cursos: agrupa la información de cada curso, su horario, profesor y estudiantes inscritos.
 Administrativo: centraliza la creación, modificación y eliminación de datos del sistema, además de generar reportes generales.
 
-🔹¿Qué funcionalidades se solicitan finalmente?
+🔴¿Qué funcionalidades se solicitan finalmente?
 
 Registro, modificación y eliminación de estudiantes y profesores.
 Creación y administración de cursos (asignación de horarios, niveles y cupos).
@@ -41,7 +41,7 @@ Interfaz gráfica
 
 -Descomposición 💭:
 
-🔹¿Cómo se distribuyen las funcionalidades?
+🔴¿Cómo se distribuyen las funcionalidades?
 
 Función de Estudiantes:
 Registro, consulta, edición y eliminación de estudiantes.
@@ -61,9 +61,9 @@ Centraliza el control general del sistema.
 Permite generar reportes de estudiantes, profesores y cursos.
 Gestiona las reglas de negocio (conflictos de horario, validaciones de cupos y niveles).
 
-🔹¿Qué debo hacer para probar estas funcionalidades? (Pruebas unitarias)
+🔴¿Qué debo hacer para probar estas funcionalidades? (Pruebas unitarias)
 
-Haremos algunas prubeas como las de:
+Haremos algunas pruebas como las de:
 
 assertEquals(expected, actual)
 assertNotEquals(unexpected, actual)
@@ -73,11 +73,9 @@ assertNotNull(obj)
 assertNull(actual)
 assertThrows(exception.class, executable)
 
--Reconocimiento de Patrones:
+-Reconocimiento de patrones:
 
-🔹¿Qué puede reutilizar?
+🔴¿Qué se puede reutilizar?
 
 En este punto lo unico que tratamos de reutilizar fueron los "CRUD" que hicimos en proyectos anteriores como el de Segurcol,
 Veterinaria y entre otros.
-
-

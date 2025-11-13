@@ -24,7 +24,7 @@
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/ProyectoMusica" />
     <option name="ROOT_SYNC" value="DONT_SYNC" />
   </component>
   <component name="GitHubPullRequestSearchHistory">{
@@ -62,7 +62,7 @@
     "ModuleVcsDetector.initialDetectionPerformed": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "main",
+    "git-widget-placeholder": "master",
     "ignore.virus.scanning.warn.message": "true",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "C:/Users/user/IdeaProjects/ProyectoFinalp/ProyectoMusica/src/main/java/org/example/proyectofinalp/viewController",
@@ -116,6 +116,8 @@
       <workItem from="1762888068516" duration="636000" />
       <workItem from="1762895566030" duration="2830000" />
       <workItem from="1762973063082" duration="2378000" />
+      <workItem from="1762975516087" duration="902000" />
+      <workItem from="1763041144005" duration="1499000" />
     </task>
     <servers />
   </component>
