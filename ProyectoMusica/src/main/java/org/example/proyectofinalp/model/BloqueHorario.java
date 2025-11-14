@@ -11,12 +11,14 @@ public class BloqueHorario implements IGestionable {
     private String horaInicio;
     private String horaFin;
     private List<Aula> aulas;
+    private Academia academia;
 
     // 🔹 Constructor
     public BloqueHorario(String diaSemana, boolean disponible) {
         this.diaSemana = diaSemana;
         this.disponible = disponible;
-        this.aulas = new ArrayList<>(); // Inicializamos la lista
+        this.aulas = new ArrayList<>();
+        this.academia = academia;
     }
 
     // 🔹 Getters
@@ -38,6 +40,9 @@ public class BloqueHorario implements IGestionable {
 
     public List<Aula> getAulas() {
         return aulas;
+    }
+    public Academia getAcademia() {
+        return academia;
     }
 
     // 🔹 Setters

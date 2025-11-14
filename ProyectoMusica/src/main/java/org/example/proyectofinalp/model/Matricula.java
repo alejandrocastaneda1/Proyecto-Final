@@ -1,33 +1,52 @@
 package org.example.proyectofinalp.model;
 
-import java.util.Date;
-
 public class Matricula {
-    private Estudiante estudiante;
-    private Curso curso;
-    private Date fecha;
 
-    public Matricula(Estudiante estudiante, Curso curso, Date fecha) {
-        this.estudiante = estudiante;
-        this.curso = curso;
-        this.fecha = fecha;
+    // 🔹 Atributos
+    private String idMatricula;
+    private double costo;
+    private Estado estado;
+    private Nivel nivel;
+
+    // 🔹 Constructor
+    public Matricula(String idMatricula, double costo, Estado estado, Nivel nivel) {
+        this.idMatricula = idMatricula;
+        this.costo = costo;
+        this.estado = estado;
+        this.nivel = nivel;
     }
 
-    public Estudiante getEstudiante() { return estudiante; }
-    public void setEstudiante(Estudiante estudiante) { this.estudiante = estudiante; }
+    // 🔹 Getters
+    public String getIdMatricula() {
+        return idMatricula;
+    }
 
-    public Curso getCurso() { return curso; }
-    public void setCurso(Curso curso) { this.curso = curso; }
+    public double getCosto() {
+        return costo;
+    }
 
-    public Date getFecha() { return fecha; }
-    public void setFecha(Date fecha) { this.fecha = fecha; }
+    public Estado getEstado() {
+        return estado;
+    }
 
-    @Override
-    public String toString() {
-        return "Matricula{" +
-                "estudiante=" + estudiante.getNombre() +
-                ", curso=" + curso.getNombre() +
-                ", fecha=" + fecha +
-                '}';
+    public Nivel getNivel() {
+        return nivel;
+    }
+
+    // 🔹 Setters
+    public void setIdMatricula(String idMatricula) {
+        this.idMatricula = idMatricula;
+    }
+
+    public void setCosto(double costo) {
+        this.costo = costo;
+    }
+
+    public void setEstado(Estado estado) {
+        this.estado = estado;
+    }
+
+    public void setNivel(Nivel nivel) {
+        this.nivel = nivel;
     }
 }

@@ -10,10 +10,4 @@ public class Prerequisito {
     public Curso getCursoRequerido() { return cursoRequerido; }
     public void setCursoRequerido(Curso cursoRequerido) { this.cursoRequerido = cursoRequerido; }
 
-    @Override
-    public String toString() {
-        return "Prerequisito{" +
-                "cursoRequerido=" + cursoRequerido.getNombre() +
-                '}';
-    }
 }

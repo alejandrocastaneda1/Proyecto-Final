@@ -5,6 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="441d6d9a-2ca9-4be2-befa-47d79f28d15b" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/ProyectoMusica/src/main/java/org/example/proyectofinalp/controller/p.txt" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/ProyectoMusica/src/main/java/org/example/proyectofinalp/model/Asignatura.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/ProyectoMusica/src/main/java/org/example/proyectofinalp/model/Aula.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
@@ -118,7 +119,9 @@
       <workItem from="1762895566030" duration="2830000" />
       <workItem from="1762973063082" duration="2378000" />
       <workItem from="1762975516087" duration="902000" />
-      <workItem from="1763041144005" duration="5781000" />
+      <workItem from="1763041144005" duration="7185000" />
+      <workItem from="1763074941179" duration="177000" />
+      <workItem from="1763133479488" duration="2949000" />
     </task>
     <servers />
   </component>
