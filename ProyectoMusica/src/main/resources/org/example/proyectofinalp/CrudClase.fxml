@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="org.example.proyectofinalp.viewController.ClaseviewController"
+            style="-fx-background-color: #ECF0F1;">
+
+    <top>
+        <HBox alignment="CENTER_LEFT" spacing="20" style="-fx-background-color: #2C3E50; -fx-padding: 20;">
+            <Button fx:id="btnVolver" text="⬅ Volver" onAction="#volverMenu"
+                    style="-fx-background-color: #E74C3C; -fx-text-fill: white; -fx-font-size: 14; -fx-background-radius: 5;"/>
+            <Label text="Gestión de Clases" textFill="white">
+                <font>
+                    <Font name="System Bold" size="28"/>
+                </font>
+            </Label>
+        </HBox>
+    </top>
+
+    <center>
+        <VBox spacing="20" style="-fx-padding: 20;">
+
+            <VBox spacing="15" style="-fx-background-color: white; -fx-padding: 20; -fx-background-radius: 10;">
+                <Label text="Nueva Clase" style="-fx-font-size: 18; -fx-font-weight: bold;"/>
+
+                <GridPane hgap="10" vgap="15">
+                    <Label text="Tipo de Clase:" GridPane.columnIndex="0" GridPane.rowIndex="0"/>
+                    <ComboBox fx:id="comboTipoClase" promptText="Seleccione tipo" GridPane.columnIndex="1" GridPane.rowIndex="0" prefWidth="250"/>
+
+                    <Label text="Nombre:" GridPane.columnIndex="0" GridPane.rowIndex="1"/>
+                    <TextField fx:id="txtNombreClase" promptText="Ej: Teoría Musical Avanzada" GridPane.columnIndex="1" GridPane.rowIndex="1" prefWidth="250"/>
+
+                    <Label text="Código:" GridPane.columnIndex="0" GridPane.rowIndex="2"/>
+                    <TextField fx:id="txtCodigoClase" promptText="CL001" GridPane.columnIndex="1" GridPane.rowIndex="2"/>
+
+                    <Label fx:id="lblCapacidad" text="Cupo/Capacidad:" GridPane.columnIndex="0" GridPane.rowIndex="3"/>
+                    <TextField fx:id="txtCapacidad" promptText="20" GridPane.columnIndex="1" GridPane.rowIndex="3"/>
+                </GridPane>
+
+                <HBox spacing="10" alignment="CENTER">
+                    <Button fx:id="btnCrearClase" text="➕ Crear Clase" onAction="#crearClase"
+                            style="-fx-background-color: #27AE60; -fx-text-fill: white; -fx-font-size: 14; -fx-background-radius: 5;" prefWidth="130"/>
+                    <Button fx:id="btnEditarClase" text="✏️ Editar" onAction="#editarClase"
+                            style="-fx-background-color: #F39C12; -fx-text-fill: white; -fx-font-size: 14; -fx-background-radius: 5;" prefWidth="130"/>
+                    <Button fx:id="btnEliminarClase" text="🗑️ Eliminar" onAction="#eliminarClase"
+                            style="-fx-background-color: #E74C3C; -fx-text-fill: white; -fx-font-size: 14; -fx-background-radius: 5;" prefWidth="130"/>
+                </HBox>
+            </VBox>
+
+            <VBox spacing="10" style="-fx-background-color: white; -fx-padding: 20; -fx-background-radius: 10;">
+                <Label text="Clases Registradas" style="-fx-font-size: 18; -fx-font-weight: bold;"/>
+
+                <TableView fx:id="tablaClases" prefHeight="300">
+                    <columns>
+                        <TableColumn fx:id="colCodigoClase" text="Código" prefWidth="100"/>
+                        <TableColumn fx:id="colNombreClase" text="Nombre" prefWidth="250"/>
+                        <TableColumn fx:id="colTipo" text="Tipo" prefWidth="150"/>
+                        <TableColumn fx:id="colCupo" text="Cupo/Estado" prefWidth="130"/>
+                    </columns>
+                </TableView>
+            </VBox>
+        </VBox>
+    </center>
+</BorderPane>

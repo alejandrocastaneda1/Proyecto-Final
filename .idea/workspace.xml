@@ -5,10 +5,26 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="441d6d9a-2ca9-4be2-befa-47d79f28d15b" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/ProyectoMusica/src/main/java/org/example/proyectofinalp/App.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/ProyectoMusica/src/main/java/org/example/proyectofinalp/controller/p.txt" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/ProyectoMusica/src/main/java/org/example/proyectofinalp/model/Asignatura.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/ProyectoMusica/src/main/java/org/example/proyectofinalp/model/Aula.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ProyectoMusica/src/main/java/org/example/proyectofinalp/viewController/AsistenciaviewController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ProyectoMusica/src/main/java/org/example/proyectofinalp/viewController/ClaseviewController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ProyectoMusica/src/main/java/org/example/proyectofinalp/viewController/CursoviewController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ProyectoMusica/src/main/java/org/example/proyectofinalp/viewController/EstudianteviewController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ProyectoMusica/src/main/java/org/example/proyectofinalp/viewController/MenuPrincipalviewController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ProyectoMusica/src/main/java/org/example/proyectofinalp/viewController/ProfesorviewController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ProyectoMusica/src/main/java/org/example/proyectofinalp/viewController/ReporteviewController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ProyectoMusica/src/main/resources/org/example/proyectofinalp/CrudAsistencia.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ProyectoMusica/src/main/resources/org/example/proyectofinalp/CrudClase.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ProyectoMusica/src/main/resources/org/example/proyectofinalp/CrudCurso.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ProyectoMusica/src/main/resources/org/example/proyectofinalp/CrudEstudiante.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ProyectoMusica/src/main/resources/org/example/proyectofinalp/CrudProfesor.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ProyectoMusica/src/main/resources/org/example/proyectofinalp/MenuPrincipal.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ProyectoMusica/src/main/resources/org/example/proyectofinalp/Reporte.fxml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/ProyectoMusica/src/test/java/org/example/proyectofinalp/model/AcademiaTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -21,6 +37,7 @@
         <option value="Record" />
         <option value="Enum" />
         <option value="Interface" />
+        <option value="FxmlFile" />
         <option value="Class" />
       </list>
     </option>
@@ -61,6 +78,7 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Application.App.executor": "Run",
     "JUnit.AcademiaTest.executor": "Run",
     "ModuleVcsDetector.initialDetectionPerformed": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
@@ -99,7 +117,20 @@
       <recent name="C:\Users\user\IdeaProjects\ProyectoFinalp\ProyectoMusica\src\Test\proyectofinalp" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application.App">
+    <configuration name="App" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.example.proyectofinalp.App" />
+      <module name="ProyectoFinalp" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.example.proyectofinalp.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="AcademiaTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="ProyectoFinalp" />
       <extension name="coverage">
@@ -117,6 +148,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.App" />
         <item itemvalue="JUnit.AcademiaTest" />
       </list>
     </recent_temporary>
@@ -160,7 +192,7 @@
       <workItem from="1763165535841" duration="42000" />
       <workItem from="1763165585248" duration="39000" />
       <workItem from="1763165634528" duration="119000" />
-      <workItem from="1763165770497" duration="4095000" />
+      <workItem from="1763165770497" duration="6250000" />
     </task>
     <servers />
   </component>

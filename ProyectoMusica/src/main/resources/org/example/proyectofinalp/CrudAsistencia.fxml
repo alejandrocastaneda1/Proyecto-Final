@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="org.example.proyectofinalp.viewController.AsistenciaviewController"
+            style="-fx-background-color: #ECF0F1;">
+
+    <top>
+        <HBox alignment="CENTER_LEFT" spacing="20" style="-fx-background-color: #2C3E50; -fx-padding: 20;">
+            <Button fx:id="btnVolver" text="⬅ Volver" onAction="#volverMenu"
+                    style="-fx-background-color: #E74C3C; -fx-text-fill: white; -fx-font-size: 14; -fx-background-radius: 5;"/>
+            <Label text="Registro de Asistencia" textFill="white">
+                <font>
+                    <Font name="System Bold" size="28"/>
+                </font>
+            </Label>
+        </HBox>
+    </top>
+
+    <center>
+        <VBox spacing="20" style="-fx-padding: 20;">
+
+            <!-- Panel de Selección -->
+            <VBox spacing="15" style="-fx-background-color: white; -fx-padding: 20; -fx-background-radius: 10;">
+                <Label text="Seleccionar Clase y Fecha" style="-fx-font-size: 18; -fx-font-weight: bold;"/>
+
+                <GridPane hgap="10" vgap="15">
+                    <Label text="Curso:" GridPane.columnIndex="0" GridPane.rowIndex="0"/>
+                    <ComboBox fx:id="comboCurso" promptText="Seleccione curso" GridPane.columnIndex="1" GridPane.rowIndex="0" prefWidth="300"/>
+
+                    <Label text="Clase:" GridPane.columnIndex="0" GridPane.rowIndex="1"/>
+                    <ComboBox fx:id="comboClase" promptText="Seleccione clase" GridPane.columnIndex="1" GridPane.rowIndex="1" prefWidth="300"/>
+
+                    <Label text="Fecha:" GridPane.columnIndex="0" GridPane.rowIndex="2"/>
+                    <DatePicker fx:id="dateFecha" GridPane.columnIndex="1" GridPane.rowIndex="2" prefWidth="300"/>
+                </GridPane>
+
+                <HBox spacing="10" alignment="CENTER">
+                    <Button fx:id="btnCargarEstudiantes" text="📋 Cargar Lista" onAction="#cargarEstudiantes"
+                            style="-fx-background-color: #3498DB; -fx-text-fill: white; -fx-font-size: 14; -fx-background-radius: 5;" prefWidth="150"/>
+                    <Button fx:id="btnGuardarAsistencia" text="💾 Guardar Asistencia" onAction="#guardarAsistencia"
+                            style="-fx-background-color: #27AE60; -fx-text-fill: white; -fx-font-size: 14; -fx-background-radius: 5;" prefWidth="150"/>
+                </HBox>
+            </VBox>
+
+            <!-- Tabla de Asistencia -->
+            <VBox spacing="10" style="-fx-background-color: white; -fx-padding: 20; -fx-background-radius: 10;">
+                <Label text="Lista de Estudiantes" style="-fx-font-size: 18; -fx-font-weight: bold;"/>
+
+                <TableView fx:id="tablaAsistencia" prefHeight="350">
+                    <columns>
+                        <TableColumn fx:id="colIdEstudiante" text="ID" prefWidth="100"/>
+                        <TableColumn fx:id="colNombreEstudiante" text="Nombre Completo" prefWidth="250"/>
+                        <TableColumn fx:id="colEstadoAsistencia" text="Estado" prefWidth="200"/>
+                        <TableColumn fx:id="colAcciones" text="Acciones" prefWidth="150"/>
+                    </columns>
+                </TableView>
+
+                <!-- Leyenda -->
+                <HBox spacing="20" style="-fx-padding: 10;">
+                    <Label text="✅ Asistió" style="-fx-text-fill: #27AE60; -fx-font-weight: bold;"/>
+                    <Label text="❌ No Asistió" style="-fx-text-fill: #E74C3C; -fx-font-weight: bold;"/>
+                    <Label text="🏥 Excusa Médica" style="-fx-text-fill: #3498DB; -fx-font-weight: bold;"/>
+                    <Label text="🏠 Excusa Doméstica" style="-fx-text-fill: #F39C12; -fx-font-weight: bold;"/>
+                </HBox>
+            </VBox>
+        </VBox>
+    </center>
+</BorderPane>

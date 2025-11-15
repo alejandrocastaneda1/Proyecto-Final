@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="org.example.proyectofinalp.viewController.MenuPrincipalviewController"
+            style="-fx-background-color: #ECF0F1;">
+
+    <!-- Header -->
+    <top>
+        <VBox style="-fx-background-color: #2C3E50; -fx-padding: 20;">
+            <Label text="🎵 Academia Musical" textFill="white">
+                <font>
+                    <Font name="System Bold" size="32"/>
+                </font>
+            </Label>
+            <Label text="Sistema de Gestión Integral" textFill="#BDC3C7">
+                <font>
+                    <Font size="16"/>
+                </font>
+            </Label>
+        </VBox>
+    </top>
+
+    <!-- Centro con Grid de Botones -->
+    <center>
+        <GridPane hgap="20" vgap="20" alignment="CENTER">
+            <padding>
+                <Insets top="40" right="40" bottom="40" left="40"/>
+            </padding>
+
+            <!-- Fila 1 -->
+            <VBox spacing="10" GridPane.columnIndex="0" GridPane.rowIndex="0"
+                  style="-fx-background-color: white; -fx-background-radius: 10; -fx-padding: 20; -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.1), 10, 0, 0, 0);">
+                <Label text="👨‍🎓" style="-fx-font-size: 48;"/>
+                <Button fx:id="btnEstudiantes" text="Gestión de Estudiantes"
+                        onAction="#abrirGestionEstudiantes"
+                        prefWidth="200" prefHeight="50"
+                        style="-fx-background-color: #3498DB; -fx-text-fill: white; -fx-font-size: 14; -fx-background-radius: 5;">
+                </Button>
+            </VBox>
+
+            <VBox spacing="10" GridPane.columnIndex="1" GridPane.rowIndex="0"
+                  style="-fx-background-color: white; -fx-background-radius: 10; -fx-padding: 20; -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.1), 10, 0, 0, 0);">
+                <Label text="👨‍🏫" style="-fx-font-size: 48;"/>
+                <Button fx:id="btnProfesores" text="Gestión de Profesores"
+                        onAction="#abrirGestionProfesores"
+                        prefWidth="200" prefHeight="50"
+                        style="-fx-background-color: #3498DB; -fx-text-fill: white; -fx-font-size: 14; -fx-background-radius: 5;">
+                </Button>
+            </VBox>
+
+            <!-- Fila 2 -->
+            <VBox spacing="10" GridPane.columnIndex="0" GridPane.rowIndex="1"
+                  style="-fx-background-color: white; -fx-background-radius: 10; -fx-padding: 20; -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.1), 10, 0, 0, 0);">
+                <Label text="📚" style="-fx-font-size: 48;"/>
+                <Button fx:id="btnCursos" text="Gestión de Cursos"
+                        onAction="#abrirGestionCursos"
+                        prefWidth="200" prefHeight="50"
+                        style="-fx-background-color: #3498DB; -fx-text-fill: white; -fx-font-size: 14; -fx-background-radius: 5;">
+                </Button>
+            </VBox>
+
+            <VBox spacing="10" GridPane.columnIndex="1" GridPane.rowIndex="1"
+                  style="-fx-background-color: white; -fx-background-radius: 10; -fx-padding: 20; -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.1), 10, 0, 0, 0);">
+                <Label text="🎓" style="-fx-font-size: 48;"/>
+                <Button fx:id="btnClases" text="Gestión de Clases"
+                        onAction="#abrirGestionClases"
+                        prefWidth="200" prefHeight="50"
+                        style="-fx-background-color: #3498DB; -fx-text-fill: white; -fx-font-size: 14; -fx-background-radius: 5;">
+                </Button>
+            </VBox>
+
+            <!-- Fila 3 -->
+            <VBox spacing="10" GridPane.columnIndex="0" GridPane.rowIndex="2"
+                  style="-fx-background-color: white; -fx-background-radius: 10; -fx-padding: 20; -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.1), 10, 0, 0, 0);">
+                <Label text="✅" style="-fx-font-size: 48;"/>
+                <Button fx:id="btnAsistencia" text="Registro de Asistencia"
+                        onAction="#abrirRegistroAsistencia"
+                        prefWidth="200" prefHeight="50"
+                        style="-fx-background-color: #3498DB; -fx-text-fill: white; -fx-font-size: 14; -fx-background-radius: 5;">
+                </Button>
+            </VBox>
+
+            <VBox spacing="10" GridPane.columnIndex="1" GridPane.rowIndex="2"
+                  style="-fx-background-color: white; -fx-background-radius: 10; -fx-padding: 20; -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.1), 10, 0, 0, 0);">
+                <Label text="📊" style="-fx-font-size: 48;"/>
+                <Button fx:id="btnReportes" text="Reportes y Estadísticas"
+                        onAction="#abrirReportes"
+                        prefWidth="200" prefHeight="50"
+                        style="-fx-background-color: #E74C3C; -fx-text-fill: white; -fx-font-size: 14; -fx-background-radius: 5;">
+                </Button>
+            </VBox>
+        </GridPane>
+    </center>
+
+    <!-- Footer -->
+    <bottom>
+        <HBox alignment="CENTER" style="-fx-background-color: #2C3E50; -fx-padding: 15;">
+            <Label text="© 2025 Academia Musical - Sistema de Gestión v1.0" textFill="#BDC3C7"/>
+        </HBox>
+    </bottom>
+</BorderPane>
