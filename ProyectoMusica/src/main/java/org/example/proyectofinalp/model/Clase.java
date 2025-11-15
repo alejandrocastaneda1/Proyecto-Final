@@ -1,44 +1,39 @@
 package org.example.proyectofinalp.model;
 
-public abstract class Clase implements IEvaluable, IAsistible, IProgramable{
+public abstract class Clase implements IEvaluable, IAsistible, IProgramable {
 
     protected String nombre;
     protected String codigo;
-    private Matricula matricula;
-    private Academia academia;
 
-
+    // 🔹 Constructor CORREGIDO
     public Clase(String nombre, String codigo) {
         this.nombre = nombre;
         this.codigo = codigo;
-        this.matricula = matricula;
-        this.academia = academia;
     }
 
-    public String getNombre() { return nombre;
-    }
-    public void setNombre(String nombre) { this.nombre = nombre;
-    }
+    // 🔹 MÉTODO ABSTRACTO que debe ser implementado
+    public abstract String tipoClase();
 
-    public String getCodigo() { return codigo;
-    }
-    public void setCodigo(String codigo) { this.codigo = codigo;
-    }
-    public Matricula getMatricula() { return matricula; }
+    // 🔹 Getters y Setters
+    public String getNombre() { return nombre; }
+    public void setNombre(String nombre) { this.nombre = nombre; }
 
-    public void setMatricula(Matricula matricula) {
-        this.matricula = matricula;
-    }
-    public Academia getAcademia() { return academia; }
+    public String getCodigo() { return codigo; }
+    public void setCodigo(String codigo) { this.codigo = codigo; }
 
+    // 🔹 Implementación de interfaces
+    @Override
+    public void programarClase() {
+        System.out.println("Programando clase: " + nombre);
+    }
 
     @Override
-    public void ProgramarClase() { }
+    public void asistenciaClase() {
+        System.out.println("Registrando asistencia en clase: " + nombre);
+    }
 
     @Override
-    public void AsistenciaClase() { }
-
-    @Override
-    public void EvaluacionClase() { }
-
+    public void evaluacionClase() {
+        System.out.println("Evaluando clase: " + nombre);
+    }
 }

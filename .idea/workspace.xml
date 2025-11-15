@@ -8,6 +8,8 @@
       <change afterPath="$PROJECT_DIR$/ProyectoMusica/src/main/java/org/example/proyectofinalp/controller/p.txt" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/ProyectoMusica/src/main/java/org/example/proyectofinalp/model/Asignatura.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/ProyectoMusica/src/main/java/org/example/proyectofinalp/model/Aula.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ProyectoMusica/src/test/java/org/example/proyectofinalp/model/AcademiaTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -61,31 +63,65 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "JUnit.AcademiaTest.executor": "Run",
     "ModuleVcsDetector.initialDetectionPerformed": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
     "git-widget-placeholder": "master",
     "ignore.virus.scanning.warn.message": "true",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/user/IdeaProjects/ProyectoFinalp/ProyectoMusica/src/main/java/org/example/proyectofinalp/viewController",
+    "last_opened_file_path": "C:/Users/user/IdeaProjects/ProyectoFinalp/ProyectoMusica/src/Test/src/main/java",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
     "settings.editor.selected.configurable": "reference.settingsdialog.IDE.editor.colors.Fuente consola",
     "vue.rearranger.settings.migration": "true"
+  },
+  "keyToStringList": {
+    "com.intellij.ide.scratch.ScratchImplUtil$2/New Scratch File": [
+      "PLAIN_TEXT"
+    ]
   }
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\user\IdeaProjects\ProyectoFinalp\ProyectoMusica\src\Test\src\main\java" />
       <recent name="C:\Users\user\IdeaProjects\ProyectoFinalp\ProyectoMusica\src\main\java\org\example\proyectofinalp\viewController" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\user\IdeaProjects\ProyectoFinalp" />
-      <recent name="C:\Users\user\IdeaProjects\ProyectoFinalp\.idea" />
-      <recent name="C:\Users\user\IdeaProjects\ProyectoFinalp\ProyectoMusica" />
+      <recent name="C:\Users\user\IdeaProjects\ProyectoFinalp\ProyectoMusica\src" />
+      <recent name="C:\Users\user\IdeaProjects\ProyectoFinalp\ProyectoMusica\src\src\test" />
+      <recent name="C:\Users\user\IdeaProjects\ProyectoFinalp\ProyectoMusica\src\test" />
+      <recent name="C:\Users\user\IdeaProjects\ProyectoFinalp\ProyectoMusica\src\Test\proyectofinalp\java" />
+      <recent name="C:\Users\user\IdeaProjects\ProyectoFinalp\ProyectoMusica\src\Test\proyectofinalp" />
     </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="AcademiaTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="ProyectoFinalp" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.example.proyectofinalp.model.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.example.proyectofinalp.model" />
+      <option name="MAIN_CLASS_NAME" value="org.example.proyectofinalp.model.AcademiaTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.AcademiaTest" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>
@@ -121,7 +157,12 @@
       <workItem from="1762975516087" duration="902000" />
       <workItem from="1763041144005" duration="7185000" />
       <workItem from="1763074941179" duration="177000" />
-      <workItem from="1763133479488" duration="2949000" />
+      <workItem from="1763133479488" duration="3950000" />
+      <workItem from="1763163665094" duration="1810000" />
+      <workItem from="1763165535841" duration="42000" />
+      <workItem from="1763165585248" duration="39000" />
+      <workItem from="1763165634528" duration="119000" />
+      <workItem from="1763165770497" duration="3403000" />
     </task>
     <servers />
   </component>

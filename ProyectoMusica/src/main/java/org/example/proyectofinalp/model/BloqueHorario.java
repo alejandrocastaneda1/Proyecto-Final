@@ -11,61 +11,52 @@ public class BloqueHorario implements IGestionable {
     private String horaInicio;
     private String horaFin;
     private List<Aula> aulas;
-    private Academia academia;
 
-    // 🔹 Constructor
-    public BloqueHorario(String diaSemana, boolean disponible) {
+    // 🔹 Constructor CORREGIDO (sin asignaciones nulas)
+    public BloqueHorario(String diaSemana, String horaInicio, String horaFin, boolean disponible) {
         this.diaSemana = diaSemana;
+        this.horaInicio = horaInicio;
+        this.horaFin = horaFin;
         this.disponible = disponible;
         this.aulas = new ArrayList<>();
-        this.academia = academia;
     }
 
     // 🔹 Getters
-    public String getDiaSemana() {
-        return diaSemana;
-    }
-
-    public boolean getDisponible() {
-        return disponible;
-    }
-
-    public String getHoraInicio() {
-        return horaInicio;
-    }
-
-    public String getHoraFin() {
-        return horaFin;
-    }
-
-    public List<Aula> getAulas() {
-        return aulas;
-    }
-    public Academia getAcademia() {
-        return academia;
-    }
+    public String getDiaSemana() { return diaSemana; }
+    public boolean getDisponible() { return disponible; }
+    public String getHoraInicio() { return horaInicio; }
+    public String getHoraFin() { return horaFin; }
+    public List<Aula> getAulas() { return aulas; }
 
     // 🔹 Setters
-    public void setDiaSemana(String diaSemana) {
-        this.diaSemana = diaSemana;
+    public void setDiaSemana(String diaSemana) { this.diaSemana = diaSemana; }
+    public void setDisponible(boolean disponible) { this.disponible = disponible; }
+    public void setHoraInicio(String horaInicio) { this.horaInicio = horaInicio; }
+    public void setHoraFin(String horaFin) { this.horaFin = horaFin; }
+
+    // 🔹 Métodos de gestión
+    public void addAula(Aula aula) {
+        if (!aulas.contains(aula)) {
+            aulas.add(aula);
+        }
     }
 
-    public void setDisponible(boolean disponible) {
-        this.disponible = disponible;
-    }
+    @Override
+    public void gestionarClase() {
 
-    public void setHoraInicio(String horaInicio) {
-        this.horaInicio = horaInicio;
-    }
-
-    public void setHoraFin(String horaFin) {
-        this.horaFin = horaFin;
     }
 
     // 🔹 Implementación del método de la interfaz IGestionable
     @Override
     public void GestionarClase() {
-        System.out.println("Gestionando clase en el bloque horario del día " + diaSemana);
+        System.out.println("Gestionando clase en el bloque horario del día " + diaSemana +
+                " de " + horaInicio + " a " + horaFin);
+    }
+
+    @Override
+    public String toString() {
+        String estado = disponible ? "Disponible" : "Ocupado";
+        return diaSemana + " " + horaInicio + "-" + horaFin + " [" + estado + "]";
     }
 
 }

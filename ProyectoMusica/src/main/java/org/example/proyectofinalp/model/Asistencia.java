@@ -9,10 +9,10 @@ public class Asistencia {
     private LocalDate fecha;
     private Acudir acudir;
 
-    // 🔹 Constructor
-    public Asistencia(String idAsistencia, boolean asistio, LocalDate fecha) {
-        this.acudir = acudir;
+    // 🔹 Constructor CORREGIDO
+    public Asistencia(String idAsistencia, Acudir acudir, LocalDate fecha) {
         this.idAsistencia = idAsistencia;
+        this.acudir = acudir;
         this.fecha = fecha;
     }
 
@@ -26,12 +26,13 @@ public class Asistencia {
     public void setFecha(LocalDate fecha) { this.fecha = fecha; }
     public void setEstado(Acudir estado) { this.acudir = estado; }
 
-    // 🔹 toString
+    // 🔹 toString MEJORADO
     @Override
     public String toString() {
         return "Asistencia{" +
-                "idAsistencia='" + idAsistencia + '\'' +
-                ", fecha=" + fecha +
+                "ID='" + idAsistencia + '\'' +
+                ", Fecha=" + fecha +
+                ", Estado=" + acudir +
                 '}';
     }
 }
