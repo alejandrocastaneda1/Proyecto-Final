@@ -59,5 +59,10 @@ public class Curso {
     public void addReporte(Reporte reporte) { this.reportes.add(reporte); }
 
 
-
+    public void setNivel(String nuevoNivel) {
+    }
+    public void setCapacidad(int nuevaCapacidad) {
+    }
+    public void setTipo(String nuevoTipo) {
+    }
 }

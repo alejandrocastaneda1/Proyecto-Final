@@ -2,17 +2,17 @@ package org.example.proyectofinalp.model;
 
 public class Aula {
 
-    // 🔹 Atributos
+    //  Atributos
     private String codigo;
     private int capacidad;
 
-    // 🔹 Constructor
+    //  Constructor
     public Aula(String codigo, int capacidad) {
         this.codigo = codigo;
         this.capacidad = capacidad;
     }
 
-    // 🔹 Métodos Getters
+    // Métodos Getters
     public String getCodigo() {
         return codigo;
     }
@@ -21,13 +21,15 @@ public class Aula {
         return capacidad;
     }
 
-    // 🔹 Métodos Setters
+    // Métodos Setters
     public void setAula(String codigo) {
         this.codigo = codigo;
     }
-
     public void setCapacidad(int capacidad) {
         this.capacidad = capacidad;
     }
-
+    public void setNombre(String nuevoNombre) {
+    }
+    public void setCodigoClase(String nuevoCodigo) {
+    }
 }

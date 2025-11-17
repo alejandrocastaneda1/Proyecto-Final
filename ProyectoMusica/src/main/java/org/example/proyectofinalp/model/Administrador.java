@@ -2,17 +2,17 @@ package org.example.proyectofinalp.model;
 
 public class Administrador extends Persona {
 
-    // 🔹 Atributo
+    //  Atributo
     private String idAdministrador;
 
-    // 🔹 Constructor CORREGIDO
+    // Constructor
     public Administrador(String nombre, String apellido, String contacto,
                          String correo, String identificacion, String idAdministrador) {
         super(nombre, apellido, contacto, correo, identificacion);
         this.idAdministrador = idAdministrador;
     }
 
-    // 🔹 Implementación del método abstracto toString()
+    //  Implementación del método abstracto toString()
     @Override
     public String toString() {
         return "Administrador: " + nombre + " " + apellido + "\n" +
@@ -21,13 +21,13 @@ public class Administrador extends Persona {
                 "Contacto: " + contacto;
     }
 
-    // 🔹 Getters y Setters
+    //  Getters y Setters
     public String getIdAdministrador() { return idAdministrador; }
     public void setIdAdministrador(String idAdministrador) {
         this.idAdministrador = idAdministrador;
     }
 
-    // 🔹 Métodos IMPLEMENTADOS (nombres corregidos a camelCase)
+    // Métodos IMPLEMENTADOS
     public void modificarEstudiante(Estudiante estudiante, String nuevoContacto, String nuevoCorreo) {
         if (estudiante != null) {
             estudiante.actualizarDato(nuevoContacto, nuevoCorreo);

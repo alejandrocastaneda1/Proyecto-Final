@@ -38,7 +38,7 @@ public class EstudianteviewController implements Initializable {
     @FXML private TableColumn<Estudiante, String> colIdentificacion;
 
     private ObservableList<Estudiante> listaEstudiantes = FXCollections.observableArrayList();
-    private Academia academia = new Academia("Mi Academia");
+    private Academia academia = new Academia("UQ Musica", "123");
 
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {

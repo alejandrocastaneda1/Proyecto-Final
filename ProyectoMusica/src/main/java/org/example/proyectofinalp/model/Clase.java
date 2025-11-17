@@ -57,4 +57,12 @@ public abstract class Clase implements IEvaluable, IAsistible, IProgramable {
     public void modificarHorario() {
         System.out.println("Modificando horario de la clase: " + nombre);
     }
+
+    public String getCodigoClase() {
+        return "";
+    }
+
+    public void setCodigoClase(String nuevoCodigo) {
+
+    }
 }

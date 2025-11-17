@@ -5,12 +5,12 @@ import java.util.List;
 
 public class Estudiante extends Persona {
 
-    // 🔹 Atributos
+    //  Atributos
     private String idEstudiante;
     private List<Matricula> matriculas;
     private List<Curso> cursosInscritos;
 
-    // 🔹 Constructor CORREGIDO
+    //  Constructor CORREGIDO
     public Estudiante(String nombre, String apellido, String contacto,
                       String correo, String identificacion, String idEstudiante) {
         super(nombre, apellido, contacto, correo, identificacion);
@@ -28,7 +28,7 @@ public class Estudiante extends Persona {
                 "Cursos inscritos: " + cursosInscritos.size();
     }
 
-    // 🔹 Getters y Setters
+    //  Getters y Setters
     public String getIdEstudiante() { return idEstudiante; }
     public void setIdEstudiante(String idEstudiante) {
         this.idEstudiante = idEstudiante;
@@ -37,7 +37,7 @@ public class Estudiante extends Persona {
     public List<Matricula> getMatriculas() { return matriculas; }
     public List<Curso> getCursosInscritos() { return cursosInscritos; }
 
-    // 🔹 Métodos IMPLEMENTADOS (nombres corregidos a camelCase)
+    //  Métodos IMPLEMENTADOS
     public void registrarDato() {
         System.out.println("Datos del estudiante " + nombre + " registrados correctamente");
     }
