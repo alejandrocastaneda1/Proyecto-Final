@@ -42,7 +42,7 @@ public class EstudianteviewController implements Initializable {
 
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
-        // Configurar columnas
+        // Configurar columnas con los nombres EXACTOS de los getters en Estudiante
         colId.setCellValueFactory(new PropertyValueFactory<>("idEstudiante"));
         colNombre.setCellValueFactory(new PropertyValueFactory<>("nombre"));
         colApellido.setCellValueFactory(new PropertyValueFactory<>("apellido"));
@@ -65,6 +65,7 @@ public class EstudianteviewController implements Initializable {
     @FXML
     private void agregarEstudiante(ActionEvent event) {
         if (validarCampos()) {
+            // Constructor correcto: nombre, apellido, contacto, correo, identificacion, idEstudiante
             Estudiante estudiante = new Estudiante(
                     txtNombre.getText(),
                     txtApellido.getText(),
@@ -177,12 +178,14 @@ public class EstudianteviewController implements Initializable {
             stage.show();
         } catch (IOException e) {
             e.printStackTrace();
+            mostrarAlerta(Alert.AlertType.ERROR, "Error", "No se pudo cargar: " + fxml);
         }
     }
 
     private void mostrarAlerta(Alert.AlertType tipo, String titulo, String mensaje) {
         Alert alert = new Alert(tipo);
         alert.setTitle(titulo);
+        alert.setHeaderText(null);
         alert.setContentText(mensaje);
         alert.showAndWait();
     }
