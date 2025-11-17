@@ -19,7 +19,6 @@ public class Estudiante extends Persona {
         this.cursosInscritos = new ArrayList<>();
     }
 
-    // 🔹 Implementación del método abstracto toString()
     @Override
     public String toString() {
         return "Estudiante: " + nombre + " " + apellido + "\n" +

@@ -43,13 +43,12 @@ public class ReporteviewController implements Initializable {
                 "Estadísticas Generales"
         );
 
-        // Cargar datos de prueba
         cargarDatosPrueba();
         actualizarEstadisticas();
     }
 
     private void cargarDatosPrueba() {
-        // Estudiantes
+
         Estudiante est1 = new Estudiante("Juan", "Pérez", "123", "juan@mail.com", "ID1", "EST001");
         Estudiante est2 = new Estudiante("María", "García", "456", "maria@mail.com", "ID2", "EST002");
         Estudiante est3 = new Estudiante("Carlos", "López", "789", "carlos@mail.com", "ID3", "EST003");
@@ -58,14 +57,14 @@ public class ReporteviewController implements Initializable {
         academia.addEstudiante(est2);
         academia.addEstudiante(est3);
 
-        // Profesores
+
         Profesor prof1 = new Profesor("Ana", "Martínez", "111", "ana@mail.com", "ID4", "PROF001");
         Profesor prof2 = new Profesor("Luis", "Rodríguez", "222", "luis@mail.com", "ID5", "PROF002");
 
         academia.addProfesor(prof1);
         academia.addProfesor(prof2);
 
-        // Cursos
+
         Curso curso1 = new Curso("Guitarra Básica", 12);
         curso1.setInstrumento(Instrumento.GUITARRA);
         curso1.addEstudiante(est1);
@@ -78,7 +77,7 @@ public class ReporteviewController implements Initializable {
         academia.addCurso(curso1);
         academia.addCurso(curso2);
 
-        // Clases
+
         ClaseGrupal clase1 = new ClaseGrupal("Teoría Musical", "CL001", 20);
         ClaseIndividual clase2 = new ClaseIndividual("Clase Privada Piano", "CL002", true);
 

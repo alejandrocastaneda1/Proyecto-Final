@@ -37,10 +37,10 @@ public class ClaseviewController implements Initializable {
 
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
-        // Configurar ComboBox de tipo de clase
+
         comboTipoClase.setItems(FXCollections.observableArrayList("Clase Grupal", "Clase Individual"));
 
-        // Listener para cambiar el label según el tipo
+
         comboTipoClase.setOnAction(e -> {
             String tipo = comboTipoClase.getValue();
             if (tipo != null) {
@@ -56,7 +56,7 @@ public class ClaseviewController implements Initializable {
             }
         });
 
-        // Configurar columnas
+
         colCodigoClase.setCellValueFactory(new PropertyValueFactory<>("codigo"));
         colNombreClase.setCellValueFactory(new PropertyValueFactory<>("nombre"));
         colTipo.setCellValueFactory(cellData ->
@@ -80,7 +80,7 @@ public class ClaseviewController implements Initializable {
 
         tablaClases.setItems(listaClases);
 
-        // Listener para selección
+
         tablaClases.getSelectionModel().selectedItemProperty().addListener(
                 (obs, oldSelection, newSelection) -> {
                     if (newSelection != null) {

@@ -52,7 +52,7 @@ public class ProfesorviewController implements Initializable {
 
         tablaProfesores.setItems(listaProfesores);
 
-        // Listener para selección de tabla
+
         tablaProfesores.getSelectionModel().selectedItemProperty().addListener(
                 (obs, oldSelection, newSelection) -> {
                     if (newSelection != null) {

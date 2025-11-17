@@ -36,11 +36,11 @@ public class CursoviewController implements Initializable {
 
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
-        // Cargar ComboBox de Instrumentos
+
         comboInstrumento.setItems(FXCollections.observableArrayList(Instrumento.values()));
         comboNivel.setItems(FXCollections.observableArrayList(Nivel.values()));
 
-        // Configurar columnas
+
         colNombreCurso.setCellValueFactory(new PropertyValueFactory<>("nombre"));
         colDuracion.setCellValueFactory(new PropertyValueFactory<>("duracionSemanas"));
         colInstrumento.setCellValueFactory(cellData -> {
@@ -57,7 +57,7 @@ public class CursoviewController implements Initializable {
 
         tablaCursos.setItems(listaCursos);
 
-        // Listener para selección
+
         tablaCursos.getSelectionModel().selectedItemProperty().addListener(
                 (obs, oldSelection, newSelection) -> {
                     if (newSelection != null) {

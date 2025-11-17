@@ -35,7 +35,7 @@ public class AsistenciaviewController implements Initializable {
     private ObservableList<AsistenciaWrapper> listaAsistencias = FXCollections.observableArrayList();
     private Academia academia = new Academia("Mi Academia");
 
-    // Clase interna para manejar la asistencia en la tabla
+
     public static class AsistenciaWrapper {
         private Estudiante estudiante;
         private Acudir estado;
@@ -56,14 +56,14 @@ public class AsistenciaviewController implements Initializable {
 
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
-        // Configurar columnas
+
         colIdEstudiante.setCellValueFactory(new PropertyValueFactory<>("idEstudiante"));
         colNombreEstudiante.setCellValueFactory(new PropertyValueFactory<>("nombreCompleto"));
         colEstadoAsistencia.setCellValueFactory(cellData ->
                 new SimpleStringProperty(getEstadoTexto(cellData.getValue().getEstado()))
         );
 
-        // Configurar columna de acciones con botones
+
         colAcciones.setCellFactory(param -> new TableCell<>() {
             private final ComboBox<Acudir> comboEstado = new ComboBox<>();
 
@@ -93,10 +93,10 @@ public class AsistenciaviewController implements Initializable {
 
         tablaAsistencia.setItems(listaAsistencias);
 
-        // Configurar fecha actual por defecto
+
         dateFecha.setValue(LocalDate.now());
 
-        // Cargar cursos de prueba (en producción, cargar desde la academia)
+
         cargarDatosPrueba();
     }
 
@@ -116,7 +116,6 @@ public class AsistenciaviewController implements Initializable {
 
         comboCurso.setItems(FXCollections.observableArrayList(academia.getCursos()));
 
-        // Listener para cuando se selecciona un curso
         comboCurso.setOnAction(e -> {
             Curso seleccionado = comboCurso.getValue();
             if (seleccionado != null) {
@@ -162,7 +161,6 @@ public class AsistenciaviewController implements Initializable {
             String idAsistencia = "ASIST_" + wrapper.getIdEstudiante() + "_" + fecha.toString();
             Asistencia asistencia = new Asistencia(idAsistencia, wrapper.getEstado(), fecha);
 
-            // Aquí guardarías en la base de datos o archivo
             contador++;
         }
 

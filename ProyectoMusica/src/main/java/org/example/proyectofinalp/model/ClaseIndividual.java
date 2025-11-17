@@ -11,7 +11,7 @@ public class ClaseIndividual extends Clase {
         this.estudianteAsignado = null;
     }
 
-    // 🔹 Implementación del método abstracto
+
     @Override
     public String tipoClase() {
         return "Clase Individual";
@@ -38,24 +38,31 @@ public class ClaseIndividual extends Clase {
         System.out.println("Clase liberada y disponible");
     }
 
+
+    // Sobrescritura de métodos de interfaces
+
+    @Override
+    public void registrarAsistencia() {
+        if (estudianteAsignado != null) {
+            System.out.println("Registrando asistencia individual para: " + estudianteAsignado);
+        } else {
+            System.out.println("No hay estudiante asignado a esta clase");
+        }
+    }
+
+    @Override
+    public void evaluarClase() {
+        if (estudianteAsignado != null) {
+            System.out.println("Evaluando clase individual de: " + estudianteAsignado);
+        } else {
+            System.out.println("No hay estudiante para evaluar");
+        }
+    }
+
     @Override
     public String toString() {
         String estado = disponible ? "Disponible" : "Ocupada por " + estudianteAsignado;
         return tipoClase() + ": " + nombre + " - " + estado;
     }
-
-    @Override
-    public void AsistenciaClase() {
-
-    }
-
-    @Override
-    public void EvaluacionClase() {
-
-    }
-
-    @Override
-    public void ProgramarClase() {
-
-    }
 }
+

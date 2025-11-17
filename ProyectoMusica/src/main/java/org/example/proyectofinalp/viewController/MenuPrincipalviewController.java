@@ -19,7 +19,7 @@ public class MenuPrincipalviewController {
 
     @FXML
     private void abrirGestionProfesores(ActionEvent event) {
-        cambiarVista(event, "CrudProfesor.fxml");  // ✅ CORREGIDO
+        cambiarVista(event, "CrudProfesor.fxml");
     }
 
     @FXML

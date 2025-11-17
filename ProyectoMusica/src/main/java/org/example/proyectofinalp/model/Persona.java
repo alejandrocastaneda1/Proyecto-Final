@@ -19,7 +19,6 @@ public abstract class Persona {
         this.identificacion = identificacion;
     }
 
-    // 🔹 Método abstracto que DEBE ser implementado por las subclases
     public abstract String toString();
 
     // 🔹 Getters

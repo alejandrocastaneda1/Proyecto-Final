@@ -11,7 +11,6 @@ public class ClaseGrupal extends Clase {
         this.inscritos = 0;
     }
 
-    // 🔹 Implementación del método abstracto
     @Override
     public String tipoClase() {
         return "Clase Grupal";
@@ -35,23 +34,21 @@ public class ClaseGrupal extends Clase {
         }
     }
 
+
+    // Sobrescritura de métodos de interfaces
+
+    @Override
+    public void registrarAsistencia() {
+        System.out.println("Registrando asistencia grupal para " + inscritos + " estudiantes en: " + nombre);
+    }
+
+    @Override
+    public void evaluarClase() {
+        System.out.println("Evaluando clase grupal: " + nombre + " con " + inscritos + " estudiantes");
+    }
+
     @Override
     public String toString() {
         return tipoClase() + ": " + nombre + " (Cupo: " + inscritos + "/" + cupo + ")";
-    }
-
-    @Override
-    public void AsistenciaClase() {
-
-    }
-
-    @Override
-    public void EvaluacionClase() {
-
-    }
-
-    @Override
-    public void ProgramarClase() {
-
     }
 }
